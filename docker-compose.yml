@@ -1,0 +1,10 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:9.6.1
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: crypto_db
+      POSTGRES_USER: crypto_usr
+      POSTGRES_PASSWORD: crypto_pwd
