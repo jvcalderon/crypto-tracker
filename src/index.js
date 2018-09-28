@@ -18,10 +18,11 @@ setInterval(
   config.coinmarket.interval
 )
 
-// Persist price statuses in DB
-emitter.on(CREATED, priceInfo => {
-  return PriceStatusModel.create(priceInfo)
-})
+// Http
+const {io} = require('./infrastructure/http/express')
 
-// Up API
-require('./infrastructure/api/express')
+// Listeners
+emitter.on(CREATED, async priceInfo => {
+  const price = await PriceStatusModel.create(priceInfo)
+  io.emit(config.express.channel, price)
+})
