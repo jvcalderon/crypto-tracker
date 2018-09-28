@@ -22,3 +22,6 @@ setInterval(
 emitter.on(CREATED, priceInfo => {
   return PriceStatusModel.create(priceInfo)
 })
+
+// Up API
+require('./infrastructure/api/express')
