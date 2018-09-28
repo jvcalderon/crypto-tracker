@@ -1,0 +1,25 @@
+{
+  "name": "crypto-tracker",
+  "version": "1.0.0",
+  "description": "Track some crypto currency prices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoin",
+    "ether",
+    "cryptocurrency"
+  ],
+  "author": "José Vte. Calderón",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "nock": "^10.0.0"
+  }
+}

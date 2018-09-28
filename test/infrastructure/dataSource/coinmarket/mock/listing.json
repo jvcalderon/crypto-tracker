@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Bitcoin",
+            "symbol": "BTC",
+            "website_slug": "bitcoin"
+        },
+        {
+            "id": 2,
+            "name": "Litecoin",
+            "symbol": "LTC",
+            "website_slug": "litecoin"
+        },
+        {
+            "id": 3,
+            "name": "Namecoin",
+            "symbol": "NMC",
+            "website_slug": "namecoin"
+        },
+        {
+            "id": 1027,
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "website_slug": "ethereum"
+        }
+    ],
+    "metadata": {
+        "timestamp": 0,
+        "num_cryptocurrencies": 1602,
+        "error": null
+    }
+}
