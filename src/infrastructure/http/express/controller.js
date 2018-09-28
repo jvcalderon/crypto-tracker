@@ -9,6 +9,7 @@ const PriceStatusModel = persistence.sequelizeModels.PriceStatus
 const getDateSecondsAgo = sec => moment().subtract(sec, 'm').format()
 
 module.exports = {
+  index: (req, res) => res.sendFile(__dirname + '/public/index.html'),
   list: async (req, res) => {
     const fromDate = getDateSecondsAgo(config.timelineSecondsWidth)
     const result = await PriceStatusModel.findAll({where: {createdAt: {$gte: fromDate}}})

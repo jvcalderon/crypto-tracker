@@ -6,7 +6,8 @@ const io = require('socket.io')(http)
 
 const config = require('../../../config').express
 const controller = require('./controller')
-app.get('/', controller.list)
+app.get('/', controller.index)
+app.get('/api', controller.list)
 
 io.on('connection', () => console.log('User connected!'))
 
