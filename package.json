@@ -22,7 +22,8 @@
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
     "sequelize": "^4.39.0",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.1.1",
+    "swagger-express": "^1.0.5"
   },
   "devDependencies": {
     "jest": "^23.6.0",

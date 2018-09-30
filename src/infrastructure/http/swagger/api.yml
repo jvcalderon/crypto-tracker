@@ -1,0 +1,29 @@
+resourcePath: /api
+description: Get the last (100 minutes timeline) crypto currencies status
+apis:
+
+- path: /
+  operations:
+
+  - httpMethod: GET
+    summary: Get the lasts crypto currencies status
+    notes: Retrieves a list from 100 minutes ago to now
+    responseClass: PriceStatus
+    nickname: priceStatus
+    consumes:
+      - application/json
+
+models:
+    User:
+      id: PriceStatus
+      properties:
+        id:
+          type: Number
+        currency:
+          type: String
+        price:
+          type: Number
+        createdAt:
+          type: DateTime
+        updatedAt:
+          type: DateTime
