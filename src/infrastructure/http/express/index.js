@@ -11,6 +11,6 @@ app.get('/api', controller.list)
 
 io.on('connection', () => console.log('User connected!'))
 
-app.listen(config.port, () => console.log(`Listening on port ${config.port}!`))
+http.listen(config.port, () => console.log(`Listening on port ${config.port}!`))
 
 module.exports = { app, io }
