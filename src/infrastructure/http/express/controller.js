@@ -6,7 +6,7 @@ const config = require('../../../config').express
 const persistence = require('../../persistence')
 const PriceStatusModel = persistence.sequelizeModels.PriceStatus
 
-const getDateSecondsAgo = sec => moment().subtract(sec, 'm').format()
+const getDateSecondsAgo = sec => moment().subtract(sec, 's').format()
 
 module.exports = {
   index: (req, res) => res.sendFile(__dirname + '/public/index.html'),
