@@ -31,7 +31,8 @@
             label: curr,
             data: getPrices(curr)(prices),
             backgroundColor: R.head(colors[i]),
-            borderColor: R.last(colors[i])
+            borderColor: R.last(colors[i]),
+            pointRadius: 0
           }))
 
           const getConfig = prices => ({
