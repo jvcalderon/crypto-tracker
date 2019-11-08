@@ -43,5 +43,4 @@ To deploy the app in any PaaS (for example) you should need set environment para
 - UI real time refresh
 - Provides an API to GET the measures in the last 100 minutes '/api'
 - Persist data in DB every minute
-- Provides Swagger doc in '/swagger/api-docs/api'
 - Sends an email each hour with current crypto currency status

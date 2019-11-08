@@ -39,15 +39,6 @@ module.exports =
     "express": {
       "timelineSecondsWidth": 6000,
       "port": process.env.PORT || 3000,
-      "channel": "prices",
-      "swagger": {
-        "apiVersion": "1.0",
-        "swaggerVersion": "1.0",
-        "swaggerURL": "/swagger",
-        "swaggerJSON": "/api-docs",
-        "swaggerUI": "./src/infrastructure/http/swagger/public/",
-        "basePath": `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`,
-        "apis": ["./src/infrastructure/http/swagger/api.yml"]
-      }
+      "channel": "prices"
     }
   }
