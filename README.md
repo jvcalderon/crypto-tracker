@@ -1,7 +1,7 @@
 Crypto Tracker
 ==============
 
-A simple exercise focused in basic NodeJS stack (DB, mailing, API, Express, Swagger). Inverted dependencies with Event sourcing approach within an Hexagonal architecture. 
+A simple exercise focused in basic NodeJS stack (DB, mailing, API, Express). Inverted dependencies with Event sourcing approach within an Hexagonal architecture. 
 
 ## Installation
 
